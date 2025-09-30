@@ -2,18 +2,17 @@
 // and returns the number of consonants in the string.
 // Example: countConsonants("hello world") should return 7.
 
-// define the variable called "vowles" = [a, e, i, o, u]
-//consonants = !str.includes(vowles) return consonants.length
+// define the variable called "vowels" = [a, e, i, o, u]
+//consonants = !str.includes(vowels) return consonants.length
 
 const countConsonants = function (str){
-    const vowles = " aeiouAEIOU";
+    const vowels = " aeiouAEIOU";
     let consonants = 0;
     for (let char of str){
-        if (!vowles.includes(char)){
+        if (!vowels.includes(char)){
             consonants++ 
         }
     }
-
     return consonants;
 }
 
