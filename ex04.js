@@ -21,12 +21,11 @@ const mostFrequentChar = function (str){
             counts[char] = 1;
         }
         if (counts[char] > maxCount){
-            // CONFUSED, I DON'T NOT HOW TO DISPLAY THE "a"... 
             maxCount = counts[char];
-            mostFrequent = counts; // "2" It's a number...
+            mostFrequent = char;
         }
     }
-    return maxCount;
+    return mostFrequent;
 }
 
 console.log(mostFrequentChar("javascript")); // Expected output: "a"
