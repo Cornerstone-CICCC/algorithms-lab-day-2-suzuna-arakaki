@@ -22,10 +22,10 @@ const mostFrequentChar = function (str){
         }
         if (counts[char] > maxCount){
             maxCount = counts[char];
-            mostFrequent = char;
+            mostFrequent = char; //do not put counts here. I wanna store the char, not object
         }
     }
-    return mostFrequent;
+    return mostFrequent; // do not return maxCount cuz it's numerical value
 }
 
 console.log(mostFrequentChar("javascript")); // Expected output: "a"
