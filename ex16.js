@@ -4,6 +4,20 @@
 
 const numbers = [3, 10, 15, 7, 22, 18]
 
-console.log(
-  numbers
-) // Expected output: 100
+
+const evenNumber = numbers.filter((item) => {
+  if (item % 2 === 0) {
+    return item;
+  }
+})
+
+const sumNumber = evenNumber.reduce((sum, item) => {
+  return sum = sum + (item * 2)
+}, 0)
+
+console.log(sumNumber);
+
+
+// console.log(
+//   numbers
+// ) // Expected output: 100
